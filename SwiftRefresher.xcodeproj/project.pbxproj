@@ -10,6 +10,7 @@
 		33DB70BB1D91EAB20017E8F6 /* SwiftRefresher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DB70B11D91EAB20017E8F6 /* SwiftRefresher.framework */; };
 		33DB70C01D91EAB30017E8F6 /* SwiftRefresherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DB70BF1D91EAB30017E8F6 /* SwiftRefresherTests.swift */; };
 		33DB70C21D91EAB30017E8F6 /* SwiftRefresher.h in Headers */ = {isa = PBXBuildFile; fileRef = 33DB70B41D91EAB20017E8F6 /* SwiftRefresher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33DB70CC1D91EB270017E8F6 /* ArrayFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DB70CB1D91EB270017E8F6 /* ArrayFuncs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		33DB70BA1D91EAB20017E8F6 /* SwiftRefresherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRefresherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DB70BF1D91EAB30017E8F6 /* SwiftRefresherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRefresherTests.swift; sourceTree = "<group>"; };
 		33DB70C11D91EAB30017E8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DB70CB1D91EB270017E8F6 /* ArrayFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayFuncs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				33DB70B41D91EAB20017E8F6 /* SwiftRefresher.h */,
 				33DB70B51D91EAB20017E8F6 /* Info.plist */,
+				33DB70CB1D91EB270017E8F6 /* ArrayFuncs.swift */,
 			);
 			path = SwiftRefresher;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					33DB70B01D91EAB20017E8F6 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					33DB70B91D91EAB20017E8F6 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DB70CC1D91EB270017E8F6 /* ArrayFuncs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		33DB70C61D91EAB30017E8F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rsampdev.SwiftRefresher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		33DB70C71D91EAB30017E8F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		33DB70C91D91EAB30017E8F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SwiftRefresherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rsampdev.SwiftRefresherTests;
@@ -367,6 +376,7 @@
 		33DB70CA1D91EAB30017E8F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SwiftRefresherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rsampdev.SwiftRefresherTests;
